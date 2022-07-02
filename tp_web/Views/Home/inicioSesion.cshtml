@@ -1,0 +1,30 @@
+﻿    <div class="contenedor-main contenedor">
+        <div class="item">
+            <div class="center">
+                <h1 class="titulo">Inicio de sesión</h1>
+                <form class="sesion">
+                    <div class="campo_texto">
+
+                        <input type="text" required class="espacio">
+                        <span></span>
+                        <label for="">Nombre de usuario o email</label>
+
+                    </div>
+                    <div class="campo_texto">
+
+                        <input type="password" required class="espacio">
+                        <span></span>
+                        <label for="">Contraseña</label>
+
+                    </div>
+
+                    <input type="submit" name="" value="Iniciar">
+
+                    <div class="registro_usuario">
+                        <p>No posee cuenta, registrese <a asp-controller="Home" asp-action="Registro">aqui</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="item"><img src="~/img/login.svg" alt="imagen 1"></div>
+    </div>

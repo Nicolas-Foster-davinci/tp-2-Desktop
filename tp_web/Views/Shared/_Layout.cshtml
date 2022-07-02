@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - tp_web</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/StyleSheet.css" />
+    <link rel="stylesheet" href="~/tp_web.styles.css" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css" />
+</head>
+<body>
+ 
+        
+            <div class="contenedor-header">
+            <div id="particles-js"></div>
+                @RenderBody()
+
+
+            </div>
+
+            <nav>
+                <div class="contenedor">
+                    <div class="contenedor-izquierda">
+                        
+                        <a asp-controller="Home" asp-action="Index" class="logo"><h2 >E-VIDEO</h2></a>
+                        <div class="contenedor-links">
+                            <a asp-controller="Home" asp-action="Index">Inicio</a>
+                            <a asp-controller="Home" asp-action="Servicios">Servicios</a>
+                            <a asp-controller="Home" asp-action="Tutorial">Tutorial</a>
+                            <a asp-controller="Home" asp-action="Contacto">Contacto</a>
+                        </div>
+                    </div>
+            
+                    <div class="contenedor-derecha">  
+                        <a asp-controller="Home" asp-action="InicioSesion"><button>Iniciar sesion</button></a>
+                    </div>
+                 
+           
+                </div>
+            </nav>
+
+
+            
+    
+    <script src="~/lib/particles.js/particles.min.js"></script>
+    <script src="~/lib/particles.js/particles.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" ></script>
+    <script src="~/js/imagen.js" ></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
